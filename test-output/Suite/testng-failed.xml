@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="FrameWork.testComponant.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Submit rder test">
+    <classes>
+      <class name="FrameWork.SubmitOrderTest"/>
+    </classes>
+  </test> <!-- Submit rder test -->
+  <test thread-count="5" name="Error Validation Test">
+    <classes>
+      <class name="FrameWork.errorValidation"/>
+    </classes>
+  </test> <!-- Error Validation Test -->
+  <test parallel="tests" name="Error Validation Test(failed)">
+    <classes>
+      <class name="FrameWork.errorValidation">
+        <methods>
+          <include name="validation"/>
+          <include name="launchApplication"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- FrameWork.errorValidation -->
+      <class name="FrameWork.SubmitOrderTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- FrameWork.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
+</suite> <!-- Failed suite [suite] -->

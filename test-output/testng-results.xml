@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-08T09:42:19Z" name="suite" finished-at="2024-04-08T09:42:35Z" duration-ms="16808">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="errorValidation.validation()[pri:0, instance:FrameWork.errorValidation@7bc10d84]" name="validation" class="FrameWork.errorValidation"/>
+      </group> <!-- ErrorHandling -->
+      <group name="PurchesOrder">
+        <method signature="SubmitOrderTest.submitorder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" name="submitorder" class="FrameWork.SubmitOrderTest"/>
+      </group> <!-- PurchesOrder -->
+    </groups>
+    <test started-at="2024-04-08T09:42:19Z" name="Error Validation Test" finished-at="2024-04-08T09:42:30Z" duration-ms="11384">
+      <class name="FrameWork.errorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameWork.errorValidation@7bc10d84]" started-at="2024-04-08T15:12:19Z" name="launchApplication" finished-at="2024-04-08T15:12:24Z" duration-ms="5449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="Productvalidation()[pri:0, instance:FrameWork.errorValidation@7bc10d84]" started-at="2024-04-08T15:12:24Z" name="Productvalidation" finished-at="2024-04-08T15:12:26Z" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Productvalidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:FrameWork.errorValidation@7bc10d84]" started-at="2024-04-08T15:12:26Z" name="closeDriver" finished-at="2024-04-08T15:12:26Z" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameWork.errorValidation@7bc10d84]" started-at="2024-04-08T15:12:26Z" name="launchApplication" finished-at="2024-04-08T15:12:28Z" duration-ms="1562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="validation()[pri:0, instance:FrameWork.errorValidation@7bc10d84]" started-at="2024-04-08T15:12:28Z" name="validation" finished-at="2024-04-08T15:12:29Z" duration-ms="874" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email or password]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or password]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at FrameWork.errorValidation.validation(errorValidation.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:FrameWork.errorValidation@7bc10d84]" started-at="2024-04-08T15:12:30Z" name="closeDriver" finished-at="2024-04-08T15:12:30Z" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- FrameWork.errorValidation -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2024-04-08T09:42:19Z" name="Submit rder test" finished-at="2024-04-08T09:42:35Z" duration-ms="16808">
+      <class name="FrameWork.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:19Z" name="launchApplication" finished-at="2024-04-08T15:12:24Z" duration-ms="5442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitorder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:24Z" name="submitorder" data-provider="getData" finished-at="2024-04-08T15:12:28Z" duration-ms="3645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[snehaladsul@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Snehaladsul11@@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZARA COAT 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitorder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:28Z" name="closeDriver" finished-at="2024-04-08T15:12:28Z" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:28Z" name="launchApplication" finished-at="2024-04-08T15:12:30Z" duration-ms="1715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitorder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:30Z" name="submitorder" data-provider="getData" finished-at="2024-04-08T15:12:33Z" duration-ms="3509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohitnalkar@gmail.com ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Snehaladsul11@@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitorder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:33Z" name="closeDriver" finished-at="2024-04-08T15:12:33Z" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:33Z" name="launchApplication" finished-at="2024-04-08T15:12:35Z" duration-ms="1387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:35Z" name="orderHistoryTest" finished-at="2024-04-08T15:12:35Z" depends-on-methods="FrameWork.SubmitOrderTest.submitorder" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:FrameWork.SubmitOrderTest@78a287ed]" started-at="2024-04-08T15:12:35Z" name="closeDriver" finished-at="2024-04-08T15:12:35Z" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- FrameWork.SubmitOrderTest -->
+    </test> <!-- Submit rder test -->
+  </suite> <!-- suite -->
+</testng-results>
